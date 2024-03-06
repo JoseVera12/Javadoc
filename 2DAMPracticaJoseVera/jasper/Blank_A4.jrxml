@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.1.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fc262aa2-cac6-4a2b-975b-33676ae7e4eb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Cantidad" class="java.lang.String"/>
+	<parameter name="Tipo" class="java.lang.String"/>
+	<parameter name="Total" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="320" splitType="Stretch">
+			<image>
+				<reportElement x="-20" y="-20" width="595" height="340" uuid="e9a9bf58-cf20-4dac-a3e6-16107ca35bd2"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/realMadrid2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="20" width="320" height="30" uuid="c3f2395d-29d3-4701-b8eb-43e1ba2dd3df"/>
+				<text><![CDATA[COMPRA DE ENTRADAS DEL REAL MADRID CF]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="203" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="20" width="100" height="30" uuid="579f2bd0-0c2b-4e1d-80cb-0080be1152ed"/>
+				<textFieldExpression><![CDATA[$P{Cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="60" width="100" height="30" uuid="0e5f9967-37c7-4d0f-ac37-5012755d250d"/>
+				<textFieldExpression><![CDATA[$P{Tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="100" width="100" height="30" uuid="a5400418-2b5e-447e-b056-036927c87302"/>
+				<textFieldExpression><![CDATA[$P{Total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="100" width="100" height="30" uuid="41253203-22a1-40bc-82a2-a2b159e1fcbd"/>
+				<textFieldExpression><![CDATA["Total:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="100" height="30" uuid="8fa983ed-ef57-43c5-8eec-3679556ef6e2"/>
+				<textFieldExpression><![CDATA["Cantidad"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="100" height="30" uuid="4b41c577-181a-4b56-a429-2b6693873b8d"/>
+				<textFieldExpression><![CDATA["Tipo"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="245" y="0" width="110" height="150" uuid="3963342e-d7a7-407a-adf2-329fff941f71"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="80" width="185" height="65" uuid="4568ab78-cd23-4447-8412-01dd5fa623d9"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/barras.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="410" y="0" width="134" height="80" uuid="fed608c5-efad-49c9-98c5-31dac70a51a4"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/qr.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="145" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="-80" width="210" height="225" uuid="322c9b73-6b0a-47af-a1d0-fdf39593cbfb"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/match.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="370" y="50" width="205" height="95" uuid="839d0035-0785-4592-ab44-a5a32ea7d3d4"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/plantilla.jpeg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="180" y="50" width="210" height="95" uuid="d048fb1b-d481-4ba4-a46c-db1730653d46"/>
+				<imageExpression><![CDATA["C:/Users/Jose/eclipse-workspace/2DAMPracticaJoseVera/Fotos/matchday.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="-50" width="340" height="80" uuid="4ada0106-5e82-47a1-a60e-2758020ac037"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Condiciones Generales de Entrada:
+Esta entrada es personal e intransferible. Se requiere identificación para el acceso. Prohibido comportamiento inapropiado y objetos peligrosos. No hay cambios ni devoluciones. El club no asume responsabilidad por daños. Fotografías permitidas para uso personal. Cambios en la programación pueden ocurrir. No se permite ingresar con alimentos y bebidas.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>
